@@ -8,6 +8,7 @@ pageSoup = bs4.BeautifulSoup(myacc, "lxml")
 authSoup = pageSoup.find_all('div', class_="slider-annotation-author")
 titSoup = pageSoup.find_all('a', class_="slider-annotation-title", href=True)
 
+fp = open('gpb-list.txt', 'w')
 
 for i in range(len(authSoup)):
     if authSoup[i].text == '_USER_VOLUME_UNKNOWN_' or titSoup[i].text == '_USER_VOLUME_UNKNOWN_':
@@ -24,14 +25,8 @@ for i in range(len(authSoup)):
 #        uktit.append(ukSoup.find('title'))
 #        browser.quit()
 #        print(uktit)
-
-
-#    author.append(authSoup[i].text)
-#    title.append(titSoup[i].text)
     else:
-        print(titSoup[i].text + ' - ' + authSoup[i].text)
+        fp.write(titSoup[i].text + ' - ' + authSoup[i].text + '\n')
 
     i += 1
-
-#print(authSoup)
-
+fp.close()

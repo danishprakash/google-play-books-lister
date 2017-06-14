@@ -8,7 +8,7 @@ Lists all your books in a text format for you to easily export or share it.
 2. Right Click and select `Inspect Element`
 3. Right click on the `<html>` tag and select `copy`
 4. Paste the content into the same dir as the script and name it as `myacc.html`
-5. Run the script
+5. Run the script and then open `gpb-list.txt` for the list.
 
 #### Requirements
 1. BeautifulSoup4
