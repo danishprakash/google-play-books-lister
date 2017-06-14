@@ -17,5 +17,5 @@ Lists all your books in a text format for you to easily export or share it.
 This doesn't list out names of the books whose name is not properly recognized by Google.
 
 ### ToDo
-- [ ] Formatted output
+- [x] Formatted output
 - [ ] Supporting unrecognized books by Google
